@@ -40,6 +40,11 @@ PASSWORD = env('PASSWORD')
 # Application definition
 
 INSTALLED_APPS = [
+    'userauths',
+    'api',
+	'rest_framework',
+    'corsheaders',
+    'drf_yasg',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -47,11 +52,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'userauths',
-    'api',
-	'rest_framework',
-    'corsheaders',
-    'drf_yasg'
 ]
 
 MIDDLEWARE = [
@@ -139,7 +139,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 STATICFILES_DIR = [os.path.join(BASE_DIR, 'static')]
 
